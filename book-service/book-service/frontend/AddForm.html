@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+    <link rel="stylesheet" type="text/css" href="css/Form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+<h1><span id="operation">Add</span> a new book</h1>
+<div class="form">
+    <label for="image"></label>
+    <input type="file" id="image" name="image" required placeholder="Book Name" hidden>
+    <input type="submit" value="Upload image" id="upload">
+    <span id="fileName"></span>
+
+    <label for="name"></label>
+    <input type="text" id="name" name="name" required placeholder="Book Name">
+
+    <label for="author"></label>
+    <input type="text" id="author" name="author" placeholder="Author">
+
+    <label for="year"></label>
+    <input type="number" id="year" name="year" placeholder="Book year">
+
+    <label for="fiction"></label>
+    <input type="text" id="fiction" name="fiction" placeholder="Fiction">
+
+    <label for="isbn"></label>
+    <input type="text" id="isbn" name="isbn" placeholder="Isbn">
+
+    <label for="description"></label>
+    <textarea id="description" name="description" required placeholder="Description"></textarea>
+
+    <span id="message"></span>
+    <input type="submit" value="Add Book" id="addButton">
+</div>
+<script src="js/addBook.js"></script>
+</body>
+</html>

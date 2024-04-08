@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #decea3;
+    margin: 5%;
+    border-radius: 5%;
+}
+
+.book-image {
+    flex: 1;
+    padding: 30px;
+}
+
+.book-details {
+    flex: 2;
+    border: 1px #614579 solid;
+    padding: 3%;
+    border-radius: 5%;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+.book-details span {
+    color: #63635a;
+    font-size: 14px;
+}
+
+.buttons i {
+    font-size: 30px;
+    margin-left: 10%;
+    cursor: pointer;
+}

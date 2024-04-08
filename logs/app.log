@@ -1,0 +1,115 @@
+2023-05-07 15:43:46.957 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-05-07 15:43:47.030 [main] INFO  com.bookstore.libraryservice.LibraryServiceApplication - Starting LibraryServiceApplication using Java 19.0.2 with PID 12736 (C:\Users\Rehman\Downloads\Bookstore\library-service\library-service\target\classes started by Rehman in C:\Users\Rehman\Downloads\Bookstore)
+2023-05-07 15:43:47.039 [main] INFO  com.bookstore.libraryservice.LibraryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-07 15:43:47.102 [main] INFO  org.springframework.vault.core.env.LeaseAwareVaultPropertySource - Vault location [secret/library-service] not resolvable: Not found
+2023-05-07 15:43:47.102 [main] INFO  org.springframework.vault.core.env.LeaseAwareVaultPropertySource - Vault location [secret/database] not resolvable: Not found
+2023-05-07 15:43:47.935 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-07 15:43:48.086 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2023-05-07 15:43:48.500 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=b0644955-28c4-3e70-9741-20622e5a149f
+2023-05-07 15:43:48.573 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.bookstore.libraryservice.client.BookServiceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-07 15:43:49.137 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2023-05-07 15:43:49.146 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2023-05-07 15:43:49.147 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-07 15:43:49.148 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-07 15:43:49.248 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-07 15:43:49.249 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2134 ms
+2023-05-07 15:43:49.469 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-07 15:43:49.522 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-07 15:43:49.831 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-05-07 15:43:50.074 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6920fa35
+2023-05-07 15:43:50.075 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-05-07 15:43:50.136 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-07 15:43:51.004 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-07 15:43:51.016 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-07 15:43:51.479 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-07 15:43:51.635 [main] INFO  org.springframework.cloud.openfeign.FeignClientFactoryBean - For 'book-service' URL not provided. Will try picking an instance via load-balancing.
+2023-05-07 15:43:52.909 [main] INFO  org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-05-07 15:43:53.081 [main] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-07 15:43:53.162 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2023-05-07 15:43:53.178 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 52077 (http) with context path ''
+2023-05-07 15:43:53.178 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 52077
+2023-05-07 15:43:53.184 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-05-07 15:43:53.227 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-05-07 15:43:53.232 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-07 15:43:53.257 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-07 15:43:53.334 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-07 15:43:53.337 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-05-07 15:43:53.339 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-05-07 15:43:53.344 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1683459833343 with initial instances count: 3
+2023-05-07 15:43:53.356 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application LIBRARY-SERVICE with eureka with status UP
+2023-05-07 15:43:53.357 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1683459833357, current=UP, previous=STARTING]
+2023-05-07 15:43:53.359 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:c3dcd041970cce536234c9d5470492c4: registering service...
+2023-05-07 15:43:53.398 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:c3dcd041970cce536234c9d5470492c4 - registration status: 204
+2023-05-07 15:43:53.450 [main] INFO  com.bookstore.libraryservice.LibraryServiceApplication - Started LibraryServiceApplication in 8.845 seconds (process running for 11.283)
+2023-05-07 15:48:27.261 [http-nio-auto-1-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-07 15:48:27.261 [http-nio-auto-1-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-07 15:48:27.265 [http-nio-auto-1-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-05-07 15:48:27.294 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-05-07 15:48:27.294 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-05-07 15:48:27.298 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-05-07 15:48:27.366 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=23, libraryName=Read, userBooks=[1, 1, 1, 1, 1, 3, 10, -1])]
+2023-05-07 15:48:27.393 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.509 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, name=newbk, bookYear=1000)
+2023-05-07 15:48:27.516 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.523 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, name=newbk, bookYear=1000)
+2023-05-07 15:48:27.523 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.529 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, name=newbk, bookYear=1000)
+2023-05-07 15:48:27.531 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.537 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, name=newbk, bookYear=1000)
+2023-05-07 15:48:27.538 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.543 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, name=newbk, bookYear=1000)
+2023-05-07 15:48:27.543 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.550 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=3, name=Frenkenstain, bookYear=1750)
+2023-05-07 15:48:27.551 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.556 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=10, name=test for same isbn, bookYear=1000)
+2023-05-07 15:48:27.557 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-05-07 15:48:27.572 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.getAllBooksInLibraryById(..) with result LibraryDto(id=23, libraryName=Read, userBookList=[BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=3, name=Frenkenstain, bookYear=1750), BookDto(id=10, name=test for same isbn, bookYear=1000), BookDto(id=0, name=default-book, bookYear=0)])
+2023-05-07 15:48:27.572 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.getLibraryById(..) with result LibraryDto(id=23, libraryName=Read, userBookList=[BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=1, name=newbk, bookYear=1000), BookDto(id=3, name=Frenkenstain, bookYear=1750), BookDto(id=10, name=test for same isbn, bookYear=1000), BookDto(id=0, name=default-book, bookYear=0)])
+2023-05-07 15:48:34.110 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.addBookToLibrary(..)
+2023-05-07 15:48:34.112 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.addBookToLibrary(..)
+2023-05-07 15:48:34.114 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookByIsbn(..)
+2023-05-07 15:48:34.120 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.serviceImpl.LibraryServiceImpl - book id: -1
+2023-05-07 15:48:34.120 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-05-07 15:48:34.122 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=23, libraryName=Read, userBooks=[1, 1, 1, 1, 1, 3, 10, -1])]
+2023-05-07 15:48:34.124 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.save(..)
+2023-05-07 15:48:34.135 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.save(..) with result Library(id=23, libraryName=Read, userBooks=[1, 1, 1, 1, 1, 3, 10, -1, -1])
+2023-05-07 15:48:34.135 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.addBookToLibrary(..) with result null
+2023-05-07 15:48:34.162 [http-nio-auto-1-exec-2] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.addBookToLibrary(..) with result <200 OK OK,The book was successfully added to the library,[]>
+2023-05-07 15:48:53.267 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 15:48:59.581 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.addBookToLibrary(..)
+2023-05-07 15:48:59.582 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.addBookToLibrary(..)
+2023-05-07 15:48:59.582 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookByIsbn(..)
+2023-05-07 15:48:59.591 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookByIsbn(..) with result <200 OK OK,BookIdDto(id=3, isbn=67823),[connection:"keep-alive", content-type:"application/json", date:"Sun, 07 May 2023 11:48:59 GMT", keep-alive:"timeout=60", transfer-encoding:"chunked"]>
+2023-05-07 15:48:59.592 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.serviceImpl.LibraryServiceImpl - book id: 3
+2023-05-07 15:48:59.592 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-05-07 15:48:59.593 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=23, libraryName=Read, userBooks=[1, 1, 1, 1, 1, 3, 10, -1, -1])]
+2023-05-07 15:48:59.596 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.serviceImpl.LibraryServiceImpl - list: [1, 1, 1, 1, 1, 3, 10, -1, -1]
+2023-05-07 15:48:59.599 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing GeneralExceptionHandler.handleAlreadyExistInLibrary(..)
+2023-05-07 15:48:59.599 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing GeneralExceptionHandler.handleAlreadyExistInLibrary(..) with result <400 BAD_REQUEST Bad Request,Book already exist in Library. isbn: 67823,[]>
+2023-05-07 15:53:53.274 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 15:58:53.280 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:03:53.295 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:08:53.305 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:13:53.322 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:18:53.332 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:23:53.337 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:28:53.348 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:33:53.352 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:38:53.362 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-07 16:41:27.856 [SpringContextShutdownHook] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application LIBRARY-SERVICE with eureka with status DOWN
+2023-05-07 16:41:27.857 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1683463287857, current=DOWN, previous=UP]
+2023-05-07 16:41:27.857 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:c3dcd041970cce536234c9d5470492c4: registering service...
+2023-05-07 16:41:27.869 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:c3dcd041970cce536234c9d5470492c4 - registration status: 204
+2023-05-07 16:41:27.930 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-07 16:41:27.940 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-05-07 16:41:27.947 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-05-07 16:41:27.947 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-05-07 16:41:30.963 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-05-07 16:41:30.968 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:c3dcd041970cce536234c9d5470492c4 - deregister  status: 200
+2023-05-07 16:41:30.974 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

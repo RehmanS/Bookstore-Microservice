@@ -1,0 +1,319 @@
+2023-11-16 10:56:11.125 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-11-16 10:56:11.164 [main] INFO  com.bookstore.libraryservice.LibraryServiceApplication - Starting LibraryServiceApplication using Java 19.0.2 with PID 1860 (C:\My Projects\Bookstore-main\Bookstore-main\library-service\library-service\target\classes started by rahman.sh.sultanli in C:\My Projects\Bookstore-main\Bookstore-main)
+2023-11-16 10:56:11.169 [main] INFO  com.bookstore.libraryservice.LibraryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-16 10:56:11.210 [main] INFO  org.springframework.cloud.config.client.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8890
+2023-11-16 10:56:11.211 [main] INFO  org.springframework.cloud.config.client.ConfigServerConfigDataLoader - Located environment: name=library-service, profiles=[default], label=null, version=null, state=null
+2023-11-16 10:56:12.176 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-16 10:56:12.319 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interfaces.
+2023-11-16 10:56:12.599 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=11528823-8f65-3b26-8f41-004ba3a5fad2
+2023-11-16 10:56:12.675 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.bookstore.libraryservice.client.BookServiceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-16 10:56:13.217 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2023-11-16 10:56:13.225 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2023-11-16 10:56:13.226 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-16 10:56:13.226 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-16 10:56:13.331 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-16 10:56:13.332 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2118 ms
+2023-11-16 10:56:14.056 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-16 10:56:14.114 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-11-16 10:56:14.401 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-11-16 10:56:14.581 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d387e9b
+2023-11-16 10:56:14.583 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-11-16 10:56:14.616 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-16 10:56:15.495 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-16 10:56:15.505 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 10:56:15.881 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-16 10:56:15.998 [main] INFO  org.springframework.cloud.openfeign.FeignClientFactoryBean - For 'book-service' URL not provided. Will try picking an instance via load-balancing.
+2023-11-16 10:56:17.458 [main] INFO  org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-11-16 10:56:17.525 [main] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-16 10:56:17.547 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-11-16 10:56:17.742 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2023-11-16 10:56:17.774 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 52236 (http) with context path ''
+2023-11-16 10:56:17.775 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 52236
+2023-11-16 10:56:17.783 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-11-16 10:56:17.834 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-11-16 10:56:17.840 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 10:56:17.874 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-11-16 10:56:17.874 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-11-16 10:56:17.874 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-11-16 10:56:17.875 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-11-16 10:56:17.875 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-11-16 10:56:17.875 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-11-16 10:56:17.875 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-11-16 10:56:17.980 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-11-16 10:56:17.983 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-11-16 10:56:17.985 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-11-16 10:56:17.990 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1700117777990 with initial instances count: 3
+2023-11-16 10:56:18.001 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application LIBRARY-SERVICE with eureka with status UP
+2023-11-16 10:56:18.002 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1700117778002, current=UP, previous=STARTING]
+2023-11-16 10:56:18.003 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a: registering service...
+2023-11-16 10:56:18.036 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a - registration status: 204
+2023-11-16 10:56:18.079 [main] INFO  com.bookstore.libraryservice.LibraryServiceApplication - Started LibraryServiceApplication in 7.661 seconds (process running for 8.909)
+2023-11-16 10:56:18.241 [RMI TCP Connection(1)-172.16.88.121] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 10:56:18.241 [RMI TCP Connection(1)-172.16.88.121] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-16 10:56:18.243 [RMI TCP Connection(1)-172.16.88.121] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-11-16 11:00:09.293 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-11-16 11:00:09.300 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-11-16 11:00:09.315 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-11-16 11:00:09.573 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=1, libraryName=Rehman's library, userBooks=[])]
+2023-11-16 11:00:09.595 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.getAllBooksInLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[])
+2023-11-16 11:00:09.595 [http-nio-auto-1-exec-1] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.getLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[])
+2023-11-16 11:01:17.902 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:02:08.777 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-11-16 11:02:08.778 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-11-16 11:02:08.779 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-11-16 11:02:08.785 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional.empty
+2023-11-16 11:02:08.826 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing GlobalExceptionHandler.handleGenericException(..)
+2023-11-16 11:02:08.839 [http-nio-auto-1-exec-3] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing GlobalExceptionHandler.handleGenericException(..) with result <404,ErrorResponse(timestamp=11:02:08.837766800, statusCode=404, message=Library could not found by id: 2, path=http://172.16.88.121:52236/library/2),[]>
+2023-11-16 11:06:17.924 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:11:17.944 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:13:07.694 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-11-16 11:13:07.695 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-11-16 11:13:07.697 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-11-16 11:13:07.778 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=1, libraryName=Rehman's library, userBooks=[1, 2, 3])]
+2023-11-16 11:13:08.166 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:13:09.158 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10)
+2023-11-16 11:13:09.168 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:13:09.178 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef)
+2023-11-16 11:13:09.178 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:13:09.187 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)
+2023-11-16 11:13:09.187 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.getAllBooksInLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:13:09.188 [http-nio-auto-1-exec-5] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.getLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:14:22.828 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-11-16 11:14:22.828 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-11-16 11:14:22.828 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-11-16 11:14:22.831 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=1, libraryName=Rehman's library, userBooks=[1, 2, 3])]
+2023-11-16 11:14:22.833 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:14:22.847 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10)
+2023-11-16 11:14:22.848 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:14:22.857 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef)
+2023-11-16 11:14:22.857 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:14:22.864 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)
+2023-11-16 11:14:22.865 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.getAllBooksInLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:14:22.865 [http-nio-auto-1-exec-7] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.getLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:14:47.775 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-11-16 11:14:47.775 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-11-16 11:14:47.775 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-11-16 11:14:47.777 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=1, libraryName=Rehman's library, userBooks=[1, 2, 3])]
+2023-11-16 11:14:47.778 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:14:47.788 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10)
+2023-11-16 11:14:47.789 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:14:47.796 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef)
+2023-11-16 11:14:47.797 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:14:47.804 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)
+2023-11-16 11:14:47.805 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.getAllBooksInLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:14:47.805 [http-nio-auto-1-exec-8] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.getLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:15:46.670 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryController.getLibraryById(..)
+2023-11-16 11:15:46.671 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing LibraryServiceImpl.getAllBooksInLibraryById(..)
+2023-11-16 11:15:46.671 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing CrudRepository.findById(..)
+2023-11-16 11:15:46.673 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing CrudRepository.findById(..) with result Optional[Library(id=1, libraryName=Rehman's library, userBooks=[1, 2, 3])]
+2023-11-16 11:15:46.675 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:15:46.683 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10)
+2023-11-16 11:15:46.684 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:15:46.693 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef)
+2023-11-16 11:15:46.694 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - Before executing BookServiceClient.getBookById(..)
+2023-11-16 11:15:46.710 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing BookServiceClient.getBookById(..) with result BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)
+2023-11-16 11:15:46.711 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryServiceImpl.getAllBooksInLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:15:46.711 [http-nio-auto-1-exec-9] INFO  com.bookstore.libraryservice.aspects.LoggingAspect - After executing LibraryController.getLibraryById(..) with result LibraryDto(id=1, libraryName=Rehman's library, userBookList=[BookDto(id=1, image=null, name=nice_book, bookYear=1880, style=null, detail=lorem10), BookDto(id=2, image=33157, name=Martin Eden, bookYear=1750, style=null, detail=vsef), BookDto(id=3, image=picture, name=Peace and war, bookYear=1750, style=null, detail=aa)])
+2023-11-16 11:16:17.962 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:21:17.965 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:26:17.981 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:31:17.983 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-11-16 11:32:44.772 [SpringApplicationShutdownHook] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application LIBRARY-SERVICE with eureka with status DOWN
+2023-11-16 11:32:44.774 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1700119964773, current=DOWN, previous=UP]
+2023-11-16 11:32:44.775 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a: registering service...
+2023-11-16 11:32:44.801 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a - registration status: 204
+2023-11-16 11:32:45.052 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 11:32:45.092 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-11-16 11:32:45.109 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-11-16 11:32:45.449 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-11-16 11:32:48.458 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-11-16 11:32:48.521 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:382)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:212)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:191)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:184)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1170)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1084)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1053)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1003)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory$1.run(PlainConnectionSocketFactory.java:87)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:190)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:54)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 37 more
+
+2023-11-16 11:32:48.522 [SpringApplicationShutdownHook] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-16 11:32:48.561 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:382)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:212)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:191)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:184)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1170)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1084)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1053)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1003)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory$1.run(PlainConnectionSocketFactory.java:87)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:190)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:54)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 38 more
+
+2023-11-16 11:32:48.562 [SpringApplicationShutdownHook] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2023-11-16 11:32:48.564 [SpringApplicationShutdownHook] ERROR com.netflix.discovery.DiscoveryClient - DiscoveryClient_LIBRARY-SERVICE/library-service:ab3cfb46a504d3eae894cc2ea9a6546a - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.0.jar:2.0.0]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.0.jar:2.0.0]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.0.jar:2.0.0]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-2.0.0.jar:2.0.0]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.0.jar:2.0.0]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916) ~[eureka-client-2.0.0.jar:2.0.0]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892) ~[eureka-client-2.0.0.jar:2.0.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:382) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:212) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:191) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:184) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.0.1.jar:4.0.1]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.0.1.jar:4.0.1]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1177) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1170) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1084) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1053) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1003) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:139) ~[spring-boot-3.0.4.jar:3.0.4]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:108) ~[spring-boot-3.0.4.jar:3.0.4]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+2023-11-16 11:32:48.597 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Details</title>
+  <link rel="stylesheet" type="text/css" href="css/BookDetail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+ <div class="left-side">
+   <div class="book-image">
+     <img src="image/9780593315699%20(1).jpg" alt="Book Image" id="image">
+   </div>
+   <div class="buttons">
+     <i class="fa fa-edit" id="editButton"></i>
+     <i class="fa fa-remove" id="removeButton"></i>
+     <i class="fa-solid fa-heart" id="favButton"></i>
+     <i class="fa-solid fa-book" id="libraryButton"></i>
+   </div>
+ </div>
+  <div class="book-details">
+    <span>Name:</span>
+    <h2 id="name"></h2>
+    <span>Author:</span>
+    <p id="author"></p>
+    <span>Year:</span>
+    <p id="year"></p>
+    <span>Isbn:</span>
+    <p id="isbn"></p>
+    <span>Description:</span>
+    <p id="description"></p>
+    <p id="message"></p>
+  </div>
+</div>
+<script src="js/bookDetail.js"></script>
+</body>
+</html>

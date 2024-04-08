@@ -1,0 +1,87 @@
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    margin-right: 750px;
+    margin-top: 50px;
+    background-image: url("../image/5585904.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Book Antiqua", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #1A2347;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+    font-family: "Times New Roman", sans-serif;
+    font-style: italic;
+    color: #8FC1BE;
+}
+
+
+.form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+input[id="upload"] {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #5E5090;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[id="addButton"] {
+    margin-top: 10px;
+    padding: 10px 183px;
+    background-color: #5E5090;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[id="updateButton"] {
+    margin-top: 10px;
+    padding: 10px 172px;
+    background-color: #5E5090;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #10033B;
+}
+
+.form span {
+    padding: 10px;
+    color: #052e26;
+}
+
+input[id="upload"] {
+    margin-bottom: 10px;
+}

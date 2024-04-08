@@ -1,0 +1,49 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway-service          # Eureka-ya bu adla register olacaq
+  cloud:
+    gateway:
+      routes:
+        - id: book-service
+          uri: lb://book-service
+          predicates:
+            - Path=/book/**,/readList/**
+          filters:
+            - AuthenticationFilter # Request service getmezden qabaq filtere dusecek
+        - id: library-service
+          uri: lb://library-service # For load balancing
+          predicates:
+            - Path=/library/**
+          filters:
+            - AuthenticationFilter
+        - id: security-service
+          uri: lb://security-service
+          predicates:
+            - Path=/auth/**
+      discovery:
+        locator:
+          enabled: true
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+            exposedHeaders: "*"
+
+# Eurekaya baglayiriq(eurekanin url-ini veririk)
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
